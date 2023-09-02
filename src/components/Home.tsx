@@ -5,6 +5,7 @@ import fruit from "../../src/img/fruit.jpg";
 import { Products } from "./Products";
 import { Section } from "./Section";
 import { FAQ } from "./FAQ";
+import { Footer } from "./Footer";
 
 export default function Home() {
   return (
@@ -56,9 +57,18 @@ export default function Home() {
         ></div>
       </section>
       <section className="mt-32 container">
-        <h2 className="text-2xl font-bold mb-6">Frequently Asked Question</h2>
-        <FAQ />
+        <div className="max-w-2xl mx-auto">
+          <h2 className="text-2xl font-bold mb-14 text-center">
+            Frequently Asked Question
+          </h2>
+          <FAQ />
+        </div>
       </section>
+      <footer className="bg-[#0ead69]">
+        <div className="container">
+          <Footer />
+        </div>
+      </footer>
     </main>
   );
 }
